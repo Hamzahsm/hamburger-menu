@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* your menu design here */
+header {
+    background-color: black;
+    display: flex; 
+}
+
+
+/* your hamburgermenu icon start here */
+header span{
+    width: 43px;
+    height: 7px;
+    border-radius: 10px; 
+    background-color: white;
+    display: block;
+    margin: 10px 0; 
+    z-index: -1; 
+    transition: 0.3s;
+}
+
+header input {
+    width: 46px;
+    height: 50px; 
+    position: absolute;
+    opacity: 0.5;
+    left: 0px; 
+    top: 5px;
+    border: 0  none; 
+    cursor: pointer;
+    
+}
+
+header input:checked ~ span {
+    background-color: blue; 
+}
