@@ -7,7 +7,11 @@
 /* your menu design here */
 header {
     background-color: black;
-    display: flex; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5: 
 }
 
 
@@ -27,7 +31,7 @@ header input {
     width: 46px;
     height: 50px; 
     position: absolute;
-    opacity: 0.5;
+    opacity: 0;
     left: 0px; 
     top: 5px;
     border: 0  none; 
@@ -37,4 +41,33 @@ header input {
 
 header input:checked ~ span {
     background-color: blue; 
+}
+
+
+/* your menu design start here */
+
+.your-menu {
+    background: black; 
+    margin: 60px 0 0 0 ; 
+}
+
+.your-menu ol {
+    height: 600px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.your-menu ol li {
+    text-decoration: none;
+}
+
+.your-menu ol li a {
+    text-decoration: none;
+    color: white; 
+    font-size: 1.2rem;
+}
+
+.your-menu ol li a:hover {
+    color: blue; 
 }
