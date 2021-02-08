@@ -39,9 +39,6 @@ header input {
     
 }
 
-header input:checked ~ span {
-    background-color: blue; 
-}
 
 
 /* your menu design start here */
@@ -49,6 +46,7 @@ header input:checked ~ span {
 .your-menu {
     background: black; 
     margin: 60px 0 0 0 ; 
+    display: none; 
 }
 
 .your-menu ol {
@@ -68,6 +66,6 @@ header input:checked ~ span {
     font-size: 1.2rem;
 }
 
-.your-menu ol li a:hover {
+.your-menu a:hover {
     color: blue; 
 }
